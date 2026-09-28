@@ -1,437 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Musinguzi Davis | D Studios</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Full-Stack Developer, Research Analyst, Multimedia Content Creator, Kampala Uganda" name="keywords">
-  <meta content="Resourceful Research/Media Director with experience in directing information, IT, and media operations. Skilled in Python, Go-lang, Docker, and cloud architecture." name="description">
-
-  <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Musinguzi Davis, a full-stack developer and multimedia creator based in Kampala, Uganda.">
+  <title>Musinguzi Davis | Developer & Multimedia Creator</title>
   <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Musinguzi Davis home">
+      <span class="mark">D</span> Musinguzi Davis
+    </a>
 
-<body data-spy="scroll" data-offset="0" data-target="#gn-menu">
-  <!-- ========== MAIN MENU ========== -->
-  <div class="container">
-    <ul id="gn-menu" class="gn-menu-main">
-      <li class="gn-trigger">
-        <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-        <nav class="gn-menu-wrapper">
-          <div class="gn-scroller">
-            <ul class="gn-menu">
-              <li class="gn-search-item">
-                <input placeholder="Search" type="search" class="gn-search">
-                <a class="gn-icon gn-icon-search"><span>Search</span></a>
-              </li>
-              <li><a href="#home" class="gn-icon gn-icon-home smoothscroll">Home</a></li>
-              <li><a href="#about" class="gn-icon gn-icon-archive smoothscroll">About</a></li>
-              <li><a href="#portfolio" class="gn-icon gn-icon-pictures smoothscroll">Portfolio</a></li>
-              <li><a href="#blog" class="gn-icon gn-icon-article smoothscroll">Blog</a></li>
-              <li><a href="#contact" class="gn-icon gn-icon-envelop smoothscroll">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </li>
-      <li class="brand-nav"><a href="#home" class="smoothscroll">D Studios</a></li>
-    </ul>
-  </div>
+    <nav id="primary-navigation" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
+    <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+      <b>Menu</b>
+    </button>
 
-  <!-- ========== HEADER SECTION ========== -->
-  <section id="home" name="home"></section>
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h1>Full-Stack Developer, Research Analyst & <span>Multimedia Creator</span></h1>
-          <div class="hero-divider"></div>
-          <h2>Transforming complex ideas into high-quality digital solutions.</h2>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn-theme">Get In Touch</a>
-            <a href="#portfolio" class="btn-outline">See My Work</a>
-          </div>
-          <p class="hero-skills">
-            <strong>Core:</strong> Flutter &bull; Firebase &bull; Supabase &bull; Oracle APEX &bull; Adobe Premiere Pro &bull; CapCut
-          </p>
+    <a class="header-cta" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Full-stack developer <span>/</span> multimedia creator</p>
+        <h1 id="hero-title">Designing useful<br><em>things that move.</em></h1>
+        <p class="hero-lede">I build thoughtful software, visual stories, and digital systems for people and organizations doing meaningful work.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-stats" aria-label="Portfolio summary">
+          <div><strong>04</strong><span>Disciplines</span></div>
+          <div><strong>06</strong><span>Tools in my kit</span></div>
+          <div><strong>UG</strong><span>Based in Uganda</span></div>
         </div>
       </div>
+
+      <div class="hero-portrait">
+        <div class="portrait-frame">
+          <img src="img/portfolio/DSC_1383.jpg" alt="Musinguzi Davis" onerror="this.style.display='none'">
+          <div class="portrait-fallback" aria-hidden="true">
+            <span>MD</span>
+            <small>Developer<br>& creator</small>
+          </div>
+        </div>
+        <div class="availability">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span><b>Available for select projects</b><br>Let's make something clear, useful and memorable.</span>
+          <a href="#contact" aria-label="Contact Davis">↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="client-strip" aria-label="Languages, databases and software">
+      <span><img src="https://cdn.simpleicons.org/go" alt="Go logo">GoLang</span>
+      <span><img src="https://cdn.simpleicons.org/python" alt="Python logo">Python</span>
+      <span><img src="https://cdn.simpleicons.org/django" alt="Django logo">Django</span>
+      <span><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript logo">JavaScript</span>
+      <span><b class="software-mark">SQL</b>SQL / PL/SQL</span>
+      <span><b class="software-mark">DB</b>Database design</span>
+      <span><b class="software-mark">Fx</b>Firebase</span>
+      <span><b class="software-mark">Sb</b>Supabase</span>
+      <span><b class="software-mark">Dx</b>Docker</span>
+      <span><b class="software-mark">Pr</b>Premiere Pro</span>
+      <span><b class="software-mark">Ps</b>Photoshop</span>
+      <span><b class="software-mark">Lr</b>Lightroom</span>
+      <span><b class="software-mark">Ai</b>Illustrator</span>
     </div>
-  </div>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" name="about"></section>
-  <div class="container about">
-    <div class="col-lg-6 col-lg-offset-3">
-      <h5>About Me</h5>
-      <h3>Musinguzi Davis</h3>
-      <hr>
-      <h4>Resourceful full-stack developer, research analyst, and multimedia creator dedicated to transforming complex ideas into high-quality digital solutions.</h4>
-      <p>I build cross-platform mobile and web applications using Flutter, backed by robust database integration in Firebase, Supabase, and Oracle APEX. As a thorough researcher, I leverage tools like Mendeley, Google Scholar, and MS Project to manage complex project timelines, conduct deep technical literature reviews, and synthesize data into actionable insights. Complementing my technical stack, I am a highly proficient multimedia creator skilled in producing impactful storytelling and visual content using Adobe Premiere Pro, Final Cut Pro, and CapCut. Backed by strong administrative skills in the MS Office Suite, I focus on delivering seamless, comprehensive end products on schedule.</p>
-      <div class="about-contact">
-        <p><strong>Kampala, Uganda</strong> &bull; +256 765 669 658 &bull; <a href="mailto:blessed.dm23@outlook.com">blessed.dm23@outlook.com</a> &bull; <a href="https://www.linkedin.com/in/musinguzi-davis-9a5978359" target="_blank">LinkedIn</a></p>
+    <section class="intro section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-label">01 / About</div>
+      <div class="intro-content">
+        <h2 id="about-title">Technical thinking,<br><em>creative instinct.</em></h2>
+        <div>
+          <p class="large-copy">I am a results-driven full-stack developer and multimedia creator with a strong balance of technical development and creative production.</p>
+          <p>From cross-platform apps and data systems to multimedia campaigns, I turn complex ideas into work that people can understand, use and remember. I care about clear communication, considered details and delivering quality work on schedule.</p>
+          <a class="text-link" href="#contact">Work with me <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">02 / Selected work</div>
+          <h2 id="work-title">A few things<br><em>I've made.</em></h2>
+        </div>
+        <p>Software, research and media projects with a practical purpose.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-wide">
+          <a href="https://www.newidentityuganda.org" target="_blank" rel="noopener">
+            <img src="img/Website/slideshow.png" alt="New Identity Uganda website homepage">
+            <div class="project-info">
+              <span>01 / Web design & development</span>
+              <h3>New Identity Uganda</h3>
+              <p>A clear, welcoming digital home for an organization whose mission is to feed, equip, empower, disciple and send young people to think, live, and lead like Christ.</p>
+              <b>View live site ↗</b>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <a href="https://play.google.com/store/apps/details?id=com.skellztechnologies.house_hunt_app&pli=1" target="_blank" rel="noopener">
+            <img src="img/App/Home page.png" alt="House Hunt mobile app interface">
+            <div class="project-info">
+              <span>02 / Mobile product</span>
+              <h3>House Hunt</h3>
+              <p>Flutter app for finding homes with less friction.</p>
+              <b>Play Store ↗</b>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card project-paper">
+          <div class="paper-art">
+            <span>Research<br>report</span>
+            <strong>Data<br>into<br>direction.</strong>
+          </div>
+          <div class="project-info">
+            <span>03 / Research & analysis</span>
+            <h3>Dissertation research</h3>
+            <p>Data collection, analysis and findings translated into actionable insight.</p>
+            <a href="img/Research/cover.png" target="_blank" rel="noopener">Open project ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reels section-shell" id="reels" aria-labelledby="reels-title">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">03 / Video editing</div>
+          <h2 id="reels-title">Make it<br><em>move.</em></h2>
+        </div>
+        <p>Add a local MP4, YouTube link or Vimeo link to these dedicated video spaces when your edits are ready.</p>
+      </div>
+      <div class="reel-grid">
+        <article class="reel-slot reel-feature">
+          <video controls preload="metadata">
+            <source src="img/Videos/School%20session.MP4" type="video/mp4">
+            Your browser does not support video playback.
+          </video>
+          <div>
+            <small>REEL 01 / School session</small>
+            <h3>Campaigns & stories</h3>
+            <p>Documentaries, outreach films and social content.</p>
+          </div>
+        </article>
+        <article class="reel-slot reel-dark">
+          <video controls preload="metadata">
+            <source src="img/Videos/Coverage.MP4" type="video/mp4">
+            Your browser does not support video playback.
+          </video>
+          <div>
+            <small>REEL 02 / Coverage</small>
+            <h3>Events & moments</h3>
+            <p>Montages, recaps and visual memories.</p>
+          </div>
+        </article>
+        <article class="reel-slot reel-feature">
+          <video controls preload="metadata">
+            <source src="img/Videos/Book%20Cover.MP4" type="video/mp4">
+            Your browser does not support video playback.
+          </video>
+          <div>
+            <small>REEL 03 / Book cover</small>
+            <h3>Visual stories</h3>
+            <p>Creative edits, launches and visual communication.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="creative-work section-shell" aria-labelledby="creative-title">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">04 / More work</div>
+          <h2 id="creative-title">Room for the<br><em>visuals.</em></h2>
+        </div>
+        <p>Use these slots for the work you want visitors to see next.</p>
+      </div>
+      <div class="creative-grid">
+        <a class="creative-slot artwork-slot" href="img/graphics/Outreach.jpg" target="_blank" rel="noopener">
+          <img src="img/graphics/Outreach.jpg" alt="Outreach artwork">
+          <div><span>ARTWORK / Image 01</span><strong>Campaign<br>graphics</strong><b>Open artwork ↗</b></div>
+        </a>
+        <a class="creative-slot artwork-slot" href="img/graphics/Redefined.jpeg" target="_blank" rel="noopener">
+          <img src="img/graphics/Redefined.jpeg" alt="Redefined artwork">
+          <div><span>ARTWORK / Image 02</span><strong>Visual<br>identity</strong><b>Open artwork ↗</b></div>
+        </a>
+        <a class="creative-slot artwork-slot" href="img/graphics/School.jpeg" target="_blank" rel="noopener">
+          <img src="img/graphics/School.jpeg" alt="School artwork">
+          <div><span>ARTWORK / Image 03</span><strong>Social<br>campaign</strong><b>Open artwork ↗</b></div>
+        </a>
+        <a class="creative-slot website-slot" href="https://retortcivilthub-afk.github.io/retortcivilthub/" target="_blank" rel="noopener">
+          <img src="img/Website/retort/Retort%20Home%20Page.jpg" alt="Retort website home page">
+          <div><span>WEBSITE / Retort Civil Hub</span><strong>Digital<br>experiences</strong><b>View site ↗</b></div>
+        </a>
+        <a class="creative-slot website-slot" href="https://retortcivilthub-afk.github.io/retortcivilthub/" target="_blank" rel="noopener">
+          <img src="img/Website/retort/Retort%20Services%20Page.png" alt="Retort services page">
+          <div><span>WEBSITE / Retort Civil Hub</span><strong>Web<br>systems</strong><b>View site ↗</b></div>
+        </a>
+        <a class="creative-slot systems-slot" href="img/App/POS.jpg" target="_blank" rel="noopener">
+          <img src="img/App/POS.jpg" alt="Point of sale system project">
+          <div><span>POS SYSTEM / Image 01</span><strong>Point of<br>sale system</strong><b>Open project ↗</b></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills" aria-labelledby="skills-title">
+      <div class="section-label">05 / Capabilities</div>
+      <div class="skills-grid">
+        <div>
+          <h2 id="skills-title">What I bring<br><em>to the table.</em></h2>
+          <p>One practice, several ways to make an idea real.</p>
+        </div>
+        <div class="skill-list">
+          <div><span>01</span><h3>Code</h3><p><strong>GoLang</strong>, <strong>Python</strong>, <strong>Django</strong> and <strong>JavaScript</strong> for backend services, web applications, automation and interactive interfaces.</p></div>
+          <div><span>02</span><h3>Data</h3><p>Database design, relational modelling, normalization, <strong>SQL</strong>, <strong>PL/SQL</strong>, queries, views, stored procedures and data integrity.</p></div>
+          <div><span>03</span><h3>Platforms</h3><p><strong>XAMPP</strong> for local development, <strong>Firebase</strong> and <strong>Supabase</strong> for hosted data and authentication, plus <strong>Docker</strong> for portable development environments.</p></div>
+          <div><span>04</span><h3>Product</h3><p>Flutter, full-stack development, Oracle APEX, DevOps fundamentals and networking.</p></div>
+          <div><span>05</span><h3>Edit</h3><p><strong>Adobe Premiere Pro</strong>, Final Cut Pro and CapCut for purposeful video storytelling.</p></div>
+          <div><span>06</span><h3>Design</h3><p><strong>Adobe Photoshop</strong>, <strong>Lightroom</strong>, <strong>Illustrator</strong> and Canva for image finishing, color work, illustration and campaign assets.</p></div>
+        </div>
+      </div>
+      <div class="software-notes">
+        <div><h3>Adobe Premiere Pro</h3><p><b>Strength:</b> Professional timeline editing, audio, color and export control.</p><p><b>Trade-off:</b> Subscription cost and a steeper learning curve than simpler editors.</p></div>
+        <div><h3>Adobe Photoshop</h3><p><b>Strength:</b> Deep compositing, retouching and pixel-level image control.</p><p><b>Trade-off:</b> Can be heavy for quick designs and requires organized files for complex projects.</p></div>
+        <div><h3>Lightroom</h3><p><b>Strength:</b> Fast batch photo organization, color correction and catalog workflows.</p><p><b>Trade-off:</b> Less suited to detailed compositing or multi-layer graphic design.</p></div>
+        <div><h3>Adobe Illustrator</h3><p><b>Strength:</b> Scalable logos, icons, illustrations and vector artwork.</p><p><b>Trade-off:</b> Takes longer to master for photo-based work and can feel excessive for simple layouts.</p></div>
+      </div>
+    </section>
+
+    <section class="experience section-shell" aria-labelledby="experience-title">
+      <div class="section-label">06 / Experience</div>
+      <div class="timeline" id="experience-title">
+        <div><span>Aug 2025 — Present</span><h3>Research-Media Director</h3><p>New Identity Uganda</p></div>
+        <div><span>Aug 2025 — Apr 2026</span><h3>Guild Tribunal Member</h3><p>Makerere University</p></div>
+        <div><span>June 2026</span><h3>BIST Graduate</h3><p>Makerere University, Kampala</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" aria-labelledby="contact-title">
+    <div class="footer-top">
+      <div>
+        <div class="section-label">07 / Contact</div>
+        <h2 id="contact-title">Have a good idea?<br><em>Let's build it.</em></h2>
+      </div>
+      <a class="button button-light" href="mailto:blessed.dm23@outlook.com">Email directly <span aria-hidden="true">↗</span></a>
     </div>
-  </div>
 
-
-  <!-- BEGIN CHART SECTION -->
-  <div id="chartwrap">
-    <div class="container centered">
-      <div class="chart-item">
-        <canvas id="canvas" height="130" width="130"></canvas>
-        <label>Flutter</label>
+    <form class="contact-form" action="contactform/contactform.php" method="post">
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
       </div>
-
-      <div class="chart-item">
-        <canvas id="canvas1" height="130" width="130"></canvas>
-        <label>Firebase / Supabase</label>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
       </div>
-
-      <div class="chart-item">
-        <canvas id="canvas2" height="130" width="130"></canvas>
-        <label>Oracle APEX</label>
+      <div class="form-field">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required>
       </div>
-
-      <div class="chart-item">
-        <canvas id="canvas3" height="130" width="130"></canvas>
-        <label>Adobe / Media</label>
+      <div class="form-field form-field-wide">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
       </div>
+      <button class="button button-light" type="submit">Send message <span aria-hidden="true">↗</span></button>
+    </form>
+
+    <div class="footer-bottom">
+      <span>Kampala, Uganda</span>
+      <a href="mailto:blessed.dm23@outlook.com">blessed.dm23@outlook.com</a>
+      <a href="https://www.linkedin.com/in/musinguzi-davis-9a5978359" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <span>© 2026 Musinguzi Davis</span>
     </div>
-  </div>
+  </footer>
 
-  <!-- PORTFOLIO SECTION -->
-  <section id="portfolio" name="portfolio"></section>
-  <div id="foliowrap">
-    <div class="container">
-      <h3>Key Projects</h3>
-      <h5>Software, Research &amp; Media Production</h5>
-
-      <div class="portfolio-grid">
-        <!-- PROJECT 1: Website -->
-        <div class="portfolio-item">
-          <img class="img-responsive" src="img/Website/slideshow.png" alt="New Identity Uganda Website">
-          <div class="portfolio-overlay">
-            <h5>New Identity Uganda Website</h5>
-            <a data-toggle="modal" href="#modal-niu" class="btn-theme">View Project</a>
-          </div>
-        </div>
-
-        <!-- PROJECT 2: Website -->
-        <div class="portfolio-item">
-          <img class="img-responsive" src="img/Website/About page.png" alt="New Identity Uganda Website">
-          <div class="portfolio-overlay">
-            <h5>New Identity Uganda Website</h5>
-            <a data-toggle="modal" href="#modal-niu" class="btn-theme">View Project</a>
-          </div>
-        </div>
-
-        <!-- PROJECT 3: App -->
-        <div class="portfolio-item">
-          <img class="img-responsive" src="img/App/Home page.png" alt="House Hunt App">
-          <div class="portfolio-overlay">
-            <h5>House Hunt App</h5>
-            <a data-toggle="modal" href="#modal-house" class="btn-theme">View Project</a>
-          </div>
-        </div>
-
-        <!-- PROJECT 4: App -->
-        <div class="portfolio-item">
-          <img class="img-responsive" src="img/App/view detail.png" alt="House Hunt App">
-          <div class="portfolio-overlay">
-            <h5>House Hunt App</h5>
-            <a data-toggle="modal" href="#modal-house" class="btn-theme">View Project</a>
-          </div>
-        </div>
-
-        <!-- PROJECT 5: Research -->
-        <div class="portfolio-item">
-          <img class="img-responsive" src="img/Research/cover.png" alt="Dissertation Research">
-          <div class="portfolio-overlay">
-            <h5>Dissertation Research</h5>
-            <a data-toggle="modal" href="#modal-research" class="btn-theme">View Project</a>
-          </div>
-        </div>
-
-        <!-- PROJECT 6: Research -->
-        <div class="portfolio-item">
-          <img class="img-responsive" src="img/Research/results.png" alt="Dissertation Research">
-          <div class="portfolio-overlay">
-            <h5>Dissertation Research</h5>
-            <a data-toggle="modal" href="#modal-research" class="btn-theme">View Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODALS -->
-  <!-- New Identity Uganda Website -->
-  <div class="modal fade" id="modal-niu" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">New Identity Uganda Website</h4>
-        </div>
-        <div class="modal-body">
-          <p><img class="img-responsive" src="img/Website/slideshow.png" alt=""></p>
-          <p><img class="img-responsive" src="img/Website/About page.png" alt=""></p>
-          <p><img class="img-responsive" src="img/Website/meet the team page.png" alt=""></p>
-          <p>Designed and developed the official website for New Identity Uganda (www.newidentityuganda.org), an organization supporting young people living with HIV. Built with modern web technologies and cloud database integration, deployed with a focus on accessibility and performance.</p>
-          <p><b><a href="https://www.newidentityuganda.org" target="_blank">Visit Site &rarr;</a></b></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn-theme" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- House Hunt App -->
-  <div class="modal fade" id="modal-house" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">House Hunt App</h4>
-        </div>
-        <div class="modal-body">
-          <p><img class="img-responsive" src="img/App/Home page.png" alt=""></p>
-          <p><img class="img-responsive" src="img/App/home app.png" alt=""></p>
-          <p><img class="img-responsive" src="img/App/signin page.png" alt=""></p>
-          <p><img class="img-responsive" src="img/App/studo rooms.png" alt=""></p>
-          <p><img class="img-responsive" src="img/App/view detail.png" alt=""></p>
-          <p><img class="img-responsive" src="img/App/view less.png" alt=""></p>
-          <p>A cross-platform mobile application designed to simplify the house hunting process. Features property listings, search filters, room previews, and direct landlord contact. Built with Flutter and a focus on user experience for the Ugandan market.</p>
-          <p><b><a href="https://play.google.com/store/apps/details?id=com.skellztechnologies.house_hunt_app&pli=1" target="_blank">View on Play Store &rarr;</a></b></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn-theme" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Dissertation Research -->
-  <div class="modal fade" id="modal-research" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Dissertation Research</h4>
-        </div>
-        <div class="modal-body">
-          <p><img class="img-responsive" src="img/Research/cover.png" alt=""></p>
-          <p><img class="img-responsive" src="img/Research/body.png" alt=""></p>
-          <p><img class="img-responsive" src="img/Research/anaylsis.png" alt=""></p>
-          <p><img class="img-responsive" src="img/Research/results.png" alt=""></p>
-          <p>Academic research conducted in partnership with New Identity Uganda and No Boundaries International. This working report covers data collection, analysis, and findings that will contribute to the full dissertation project. Leveraging tools like Mendeley, Google Scholar, and MS Project to manage timelines and synthesize data into actionable insights.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn-theme" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- BLOG / INSIGHTS SECTION -->
-  <section id="blog" name="blog"></section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-6 about">
-        <h5>Insights</h5>
-        <h3>Research &amp; Experience</h3>
-
-        <div class="accordion" id="accordion2">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                <span class="date">2025</span>
-                <span class="plus">+</span> Full-Stack Development with Flutter
-              </a>
-            </div>
-            <div id="collapseOne" class="accordion-body collapse in">
-              <div class="accordion-inner">
-                <h4>Building cross-platform mobile and web applications using Flutter.</h4>
-                <p>Developing high-performance applications with Flutter, backed by robust database integration in Firebase, Supabase, and Oracle APEX. Focused on delivering seamless, comprehensive end products that solve real problems.</p>
-                <p><img class="img-circle" src="img/portfolio/DSC_1383.jpg" height="50px" width="50px"> &mdash; <i>Musinguzi Davis</i></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                <span class="date">2024</span>
-                <span class="plus">+</span> Research &amp; Data Analysis
-              </a>
-            </div>
-            <div id="collapseTwo" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <p>Leveraging tools like Mendeley, Google Scholar, and MS Project to manage complex project timelines, conduct deep technical literature reviews, and synthesize data into actionable insights. Producing thorough research that drives strategic decisions.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                <span class="date">2024</span>
-                <span class="plus">+</span> Multimedia Production
-              </a>
-            </div>
-            <div id="collapseThree" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <p>Producing impactful storytelling and visual content using Adobe Premiere Pro, Final Cut Pro, and CapCut. Created event montages for the Jinja Network of YPLHIV, along with documentaries and promotional content for organizational outreach.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                <span class="date">2023</span>
-                <span class="plus">+</span> Bachelor of Information Systems &amp; Technology
-              </a>
-            </div>
-            <div id="collapseFour" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <p>Currently pursuing a Bachelor of Information Systems and Technology at Makerere University (09/2023 &ndash; 06/2026). Combining academic study with hands-on software development, research analysis, and multimedia production work in the field.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3"></div>
-    </div>
-  </div>
-
-  <!-- TESTIMONIALS -->
-  <div id="testimonial">
-    <div class="container">
-      <div class="bs-example">
-        <div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="item active">
-              <h1>Davis delivered an exceptional digital solution for our organization. His technical expertise and understanding of our mission made the process seamless and the results outstanding.</h1>
-              <h2>New Identity Uganda</h2>
-            </div>
-            <div class="item">
-              <h1>The applications Davis builds are always well-crafted and reliable. His ability to understand complex requirements and deliver practical solutions is remarkable.</h1>
-              <h2>Project Collaborator</h2>
-            </div>
-            <div class="item">
-              <h1>From full-stack development to multimedia production, Davis brings a rare combination of technical depth and creative vision to every project he takes on.</h1>
-              <h2>Research Partner</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" name="contact"></section>
-  <div id="footerwrap">
-    <div class="container">
-      <div class="col-lg-5">
-        <h3>Get In Touch</h3>
-        <p>
-          Kampala, Uganda<br>
-          +256 765 669 658<br>
-          <a href="mailto:blessed.dm23@outlook.com">blessed.dm23@outlook.com</a>
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/musinguzi-davis-9a5978359" target="_blank">LinkedIn &rarr;</a><br>
-          <a href="https://x.com/dm23blessed?s=11" target="_blank">X (Twitter) &rarr;</a>
-        </p>
-      </div>
-
-      <div class="col-lg-7">
-        <h3>Drop Me A Line</h3>
-        <br>
-
-        <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-          <div class="form-group">
-            <label for="contact-name">Your Name</label>
-            <input type="text" name="name" class="form-control" id="contact-name" placeholder="John Doe" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="contact-email">Your Email</label>
-            <input type="email" name="email" class="form-control" id="contact-email" placeholder="john@example.com" data-rule="email" data-msg="Please enter a valid email">
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="contact-subject">Subject</label>
-            <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Project inquiry" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject">
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="contact-message">Your Message</label>
-            <textarea class="form-control" name="message" id="contact-message" placeholder="Tell me about your project..." rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-            <div class="validate"></div>
-          </div>
-
-          <div class="loading"></div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-
-          <div class="form-send">
-            <button type="submit" class="btn-theme">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div id="copyrights">
-    <div class="container">
-      <p>
-        &copy; 2025 <strong>D Studios</strong>. All Rights Reserved
-      </p>
-      <div class="credits">
-        Designed &amp; Built by Musinguzi Davis
-      </div>
-    </div>
-  </div>
-
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/php-mail-form/validate.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/chart/chart.js"></script>
-  <script src="lib/classie/classie.js"></script>
-  <script src="lib/gnmenu/gnmenu.js"></script>
-
-  <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
 </body>
 </html>
